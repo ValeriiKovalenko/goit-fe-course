@@ -1,5 +1,5 @@
 body {
-    font-family: 'Playfair Display', 'Ubuntu:300', serif;
+    font-family: 'Playfair Display', 'Ubuntu:300' 'Roboto', serif;
     color: #6c7279;
     font-size: 14px;
     line-height: 21px;
@@ -7,7 +7,7 @@ body {
 
 
 .site-navigation {
-    font-size: 13px;
+    font-size: 14px;
     list-style: none;
     text-align: center;
 }
@@ -71,7 +71,7 @@ p {
 
 .article-class {
     color:#b4ad9e;
-    font-family: "Ubuntu:300";
+    font-family: "Roboto";
 font-weight: 300;
 width: 408px;
 height: 25px;
