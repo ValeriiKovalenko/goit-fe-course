@@ -1,0 +1,133 @@
+body {
+    font-family: 'Playfair Display', 'Ubuntu:300', serif;
+    color: #6c7279;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+
+.site-navigation {
+    font-size: 13px;
+    list-style: none;
+    text-align: center;
+}
+
+.site-navigation-item a {
+    color: #626262;
+    font-weight: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 16px;
+    
+}
+
+.site-navigation :hover {
+    color: #03a9f4;
+    
+}
+
+ul.site-navigation {
+    display: block;
+    margin: auto;
+   
+    
+    
+}
+
+li.site-navigation-item {
+    display: inline-block;
+    padding: 50px;
+    text-align: center;
+    
+    
+
+}
+
+ul.article-list {
+    width: 960px;
+    display: block;
+    list-style: none;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+    
+
+}
+
+.article-list li {
+    width: 470;
+    text-decoration: none;
+    display: inline-block;
+    margin: 20px;
+
+}
+
+p {
+    width: 416px;
+    text-align: justify;
+
+}
+
+.article-class {
+    color:#b4ad9e;
+    font-family: "Ubuntu:300";
+font-weight: 300;
+width: 408px;
+height: 25px;
+font-size: 14px;
+}
+
+.article-header {
+
+font-size: 30px;
+color: #626262;
+font-family: "Playfair Display";
+font-weight: 400;
+text-align: left;
+
+}
+
+.article-text {
+   
+font-size: 14px;
+line-height: 24px;
+color: #626262;
+font-family: "Playfair Display";
+font-weight: 400;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.load-more-button {
+    
+    display: inline-block;
+    width: 164px;
+    height: 60px;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 24px;
+    color: #626262;
+    font-family: "Playfair Display";
+    font-weight: 400;
+    user-select: none;
+    background: transparent;
+    border-color: #626262;
+    
+}
+.load-more-button :hover span {
+        
+}
