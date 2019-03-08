@@ -88,9 +88,7 @@ li.site-navigation-item {
 li.site-navigation-item:nth-last-of-type(1) {
     margin-right: 0;
 }
-li.site-navigation-item:nth-last-of-type(4) {
-    margin-left: 85px;
-}
+
 
 
 .article-list {
@@ -171,7 +169,6 @@ li.site-navigation-item:nth-last-of-type(4) {
     
     margin: 0;
    
-    width: 416px;
     text-align: justify;
 }
 
