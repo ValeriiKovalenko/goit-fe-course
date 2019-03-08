@@ -26,21 +26,29 @@ body {
     margin: auto;
 }
 
+.page-header {
+    padding-top: 75px;
+    padding-bottom: 100px;
+}
 
+
+
+.site-navigation-title {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 0;
+
+}
 .site-navigation {
     font-size: 14px;
     list-style: none;
     text-align: center;
     margin: 0;
     padding: 0;
-    margin-bottom: 50px;
-    margin-top: 50px;
+   
 }
 
-.site-navigation-title {
-    margin: 0;
-    padding: 0;
-}
 
 .site-navigation-item a {
     color: #626262;
@@ -52,6 +60,7 @@ body {
     padding: 0;
     padding-left: 30px;
     padding-right: 30px;
+    font-size: 14px;
 }
 
 
@@ -70,28 +79,26 @@ ul.site-navigation {
 
 li.site-navigation-item {
     display: inline-block;
-    padding-right: 100px;
+    margin-right: 100px;
     text-align: center;
+ 
 
 }
 
 li.site-navigation-item:nth-last-of-type(1) {
-    padding-right: 0;
+    margin-right: 0;
 }
 li.site-navigation-item:nth-last-of-type(4) {
-    padding-left: 85px;
+    margin-left: 85px;
 }
 
 
 .article-list {
 
-    display: block;
-    list-style: none;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+    
     padding: 0px;
     font-size: 0px;
+    margin-bottom: 70px;
 
 
 
@@ -124,6 +131,13 @@ li.site-navigation-item:nth-last-of-type(4) {
     margin-bottom: 0;
 }
 
+.article-img {
+    margin-bottom: 30px;
+    
+}
+
+
+
 .article-class {
     color: #b4ad9e;
     font-family: "Roboto";
@@ -132,7 +146,7 @@ li.site-navigation-item:nth-last-of-type(4) {
     font-size: 14px;
     margin: 0;
     margin-bottom: 30px;
-    margin-top: 30px;
+    
     text-align: left;
 }
 
@@ -154,9 +168,9 @@ li.site-navigation-item:nth-last-of-type(4) {
     line-height: 24px;
     color: #626262;
     font-family: "Playfair Display";
-    font-weight: 400;
+    
     margin: 0;
-    margin-bottom: 130px;
+   
     width: 416px;
     text-align: justify;
 }
