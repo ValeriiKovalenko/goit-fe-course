@@ -201,24 +201,25 @@ h3.product-name {
     background-color: #7fd9c7;
 }
 
-.news-list{
+.news-list {
     list-style: none;
-    height: auto;
-    overflow: hidden;
-    font-size: 0;
+    padding: 0;
 
 }
 .news-item {
-    display: table;
+    
     float: left;
     
     padding: 0;
     font-size: 13px;
     width: 350px;
-    padding-right: 30px;
+    margin-right: 30px;
     color: #555252;
 font-family: "Open Sans";
 font-weight: 600;
+}
+.news-item:nth-child(3) {
+    margin-right: 0;
 }
 
     
@@ -230,7 +231,7 @@ font-family: "Open Sans";
 font-weight: 600;
 font-size: 18px;
 margin-top: 0;
-margin-bottom: 0;
+margin-bottom: 30px;
 }
 
 .news-title::after {
@@ -254,8 +255,9 @@ font-family: "Open Sans";
 font-weight: 400;
 text-align: justify;
 margin: 0;
-padding-bottom: 20px;
-padding-top: 30px;
+margin-bottom: 20px;
+
+
 }
 
 .news-button {
@@ -269,11 +271,11 @@ padding-top: 30px;
     font-family: "Playfair Display";
     font-weight: 400;
     background: #1abc9c;
-    margin: 0;
+    
     font-family: "Open Sans";
 font-weight: 300;
 border-radius: 4px;
-margin: 0;
+
 }
 
 .news-button:hover {
@@ -284,5 +286,5 @@ margin: 0;
     padding-bottom: 80px;
 }
 .news-image {
-    padding-bottom: 15px;
+    margin-bottom: 15px;
 }
