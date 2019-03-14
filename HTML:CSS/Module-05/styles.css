@@ -46,7 +46,6 @@ img {
 
 body {
     font-family: "Open+Sans", "Roboto";
-    background-image: linear-gradient(#ECE9E6, #FFFFFF);
     max-width: 100%;
     height: auto;
     margin: 0 auto;
@@ -64,8 +63,8 @@ body {
 .site-header {
     width: 1110px;
     margin: auto;
-    margin-bottom: 30px;
-    margin-top: 30px;
+    padding-bottom: 30px;
+    padding-top: 30px;
 }
 
 .site-logo {
@@ -150,7 +149,7 @@ h1::first-letter {
 
     background-repeat: no-repeat;
     background-position: center;
-    margin-bottom: 100px;
+    
 
 
 
@@ -164,7 +163,7 @@ h1::first-letter {
     font-size: 60px;
     line-height: 82px;
     margin: 0;
-
+text-transform: uppercase;
 
 }
 
@@ -173,6 +172,8 @@ h1::first-letter {
     font-weight: 300;
     color: white;
     font-size: 18px;
+    margin: 0;
+    text-transform: uppercase;
 
 
 }
@@ -221,6 +222,10 @@ h1::first-letter {
     transform: translate(-50%, -50%);
 
 }
+.new-collection {
+    padding-top: 100px;
+    background-color: #e9f0fd;
+}
 
 .title {
     font-family: "roboto";
@@ -254,6 +259,7 @@ h1::first-letter {
     overflow: hidden;
     padding: 0;
     font-size: 0;
+    padding-bottom: 100px;
 
 
 }
@@ -273,7 +279,7 @@ h3.product-name {
     color: #ffffff;
     display: inline-block;
     text-transform: uppercase;
-    line-height: 40px;
+    line-height: 32px;
     padding-left: 15px;
 
 
@@ -293,7 +299,7 @@ h3.product-name {
     font-family: "roboto";
     font-weight: 900;
     text-align: center;
-    line-height: 40px;
+    line-height: 32px;
 }
 
 
@@ -303,6 +309,8 @@ h3.product-name {
     margin-right: 30px;
     margin-bottom: 30px;
     position: relative;
+    width: 255px;
+    height: 322px;
 
 
 
@@ -329,6 +337,9 @@ h3.product-name {
 .light-area:hover {
     background-color: #1abc9c;
 }
+.product-link {
+    display: block;
+}
 
 .product-link:hover .product-name {
     background-color: #1abc9c;
@@ -347,15 +358,16 @@ h3.product-name {
 
 
 .box {
-    width: 235px;
-    height: 250px;
-    background-color: rgba(0, 0, 0, 0.8);
-    opacity: .7;
+    width: 255px;
+    height: 252px;
+    
     position: absolute;
-    bottom: 15%;
-    left: 4%;
+    top: 0%;
+    left: 0%;
     z-index: 0;
     display: none;
+    border: 10px solid rgba(255,255,255,0.7);
+    background-color: rgba(0,0,0,0.549);
 
 
 }
@@ -404,9 +416,13 @@ h3.product-name {
 
 }
 
-.cart-link {
+.market-text {
     text-decoration: none;
     color: white;
+    font-size: 12px;
+    font-family: "open sans";
+    font-weight: 400;
+    text-align: center;
 }
 
 
@@ -452,6 +468,3 @@ span {
     color: #1abc9c;
 }
 
-main {
-    margin-bottom: 100px;
-}
