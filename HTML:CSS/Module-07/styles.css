@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.visually-hidden:not(:focus):not(:active), input[type="checkbox"].visually-hidden, input[type="radio"].visually-hidden {
+   position: absolute;
+   width: 1px;
+   height: 1px;
+   margin: -1px;
+   border: 0;
+   padding: 0;
+   white-space: nowrap;
+   clip-path: inset(100%);
+   clip: rect(0 0 0 0);
+   overflow: hidden;
+}
+
+
+@font-face {
+    font-family: "Roboto";
+    src: url(./Roboto/Roboto-regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(./Roboto/Roboto-Bold.ttf);
+    font-weight: bold;
+    font-style: bold;
+
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: url('./montserrat-v12-latin/montserrat-v12-latin-700.woff');
+}
+
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    src: url(./montserrat-v12-latin/montserrat-v12-latin-regular.woff)
+}
+
+@font-face {
+    font-family: "wisdom";
+    src: url(./WisdomScriptAJ.otf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Droid";
+    font-style: italic;
+    font-weight: 400;
+    src: url(./droid-serif/DroidSerif-Italic.ttf)
+}
+
+
+.wrapper {
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 45px;
+    margin-bottom: 110px;
+}
+
+.site-navigation-list {
+    display: flex;
+    list-style: none;
+}
+
+.site-navigation-item {
+    margin-right: 40px;
+    font-family: "Montserrat";
+    font-weight: 400;
+    color: #212121;
+
+}
+
+.site-navigation-item:nth-child(5) {
+    margin-right: 0;
+
+}
+
+.site-navigation-link {
+    text-decoration: none;
+    color: #222222;
+    text-transform: uppercase;
+}
+
+.site-navigation-link:hover {
+    color: #fdd135;
+}
+
+.site-logo {
+    color: #fdd135;
+    font-family: "wisdom";
+    font-size: 26px;
+    text-decoration: none;
+}
+
+.section-header {
+    font-family: "montserrat";
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 75px;
+}
+
+.section-text {
+    font-family: "Droid";
+    font-weight: 400;
+    font-style: italic;
+    font-size: 16px;
+    color: #adadad;
+    margin-bottom: 75px;
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.services-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.e-comerce::before {
+    content: "";
+    display: inline-block;
+    width: 74px;
+    height: 74px;
+    background-image: url("./icon1.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+
+
+}
+
+.services-item {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-top: 74px;
+    text-align: center;
+    width: 240px;
+
+}
+
+.service-item-name {
+    font-family: "montserrat";
+    font-weight: 700;
+    font-size: 18px;
+    color: #222222;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.service-item-text {
+    font-family: "roboto";
+    font-weight: 400;
+    font-size: 14px;
+    color: #b7b7b7;
+    margin-bottom: 115px;
+}
+
+.responsive::before {
+    content: "";
+    display: inline-block;
+    width: 74px;
+    height: 74px;
+    background-image: url("./icon2.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+
+}
+
+.web::before {
+    content: "";
+    display: inline-block;
+    width: 74px;
+    height: 74px;
+    background-image: url("./icon3.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+
+}
+
+.contact {
+
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    background-image: url(./background.png);
+
+}
+
+.contact-header {
+    color: #ffffff;
+    margin-top: 110px;
+}
+
+.forms-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 940px;
+    height: 210px;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+
+.answer-form {
+    width: 940px;
+    height: 385px;
+}
+
+.contact-form {
+    width: 455px;
+
+}
+
+.op {
+    width: 100%;
+    height: 50px;
+    border-radius: 3px;
+    font-family: "montserrat";
+    font-weight: 700;
+    font-size: 14px;
+    color: #c9c9c9;
+    padding-left: 20px;
+}
+
+.contact-form-massage {
+    width: 455px;
+    height: 210px;
+    box-sizing: border-box;
+}
+
+.massage {
+    width: 100%;
+    height: 210px;
+    border-radius: 4px;
+}
+
+button {
+    display: block;
+    width: 240px;
+    height: 65px;
+    background-color: #fed136;
+    margin: 0 auto;
+
+    border-radius: 4px;
+    font-size: 18px;
+    color: #ffffff;
+    font-family: "Montserrat";
+    font-weight: 700;
+}
+
+
