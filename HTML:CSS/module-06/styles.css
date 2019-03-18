@@ -33,7 +33,7 @@
       font-weight: 700;
       font-family: "montserrat";
       color: #95e1d3;
-      
+      display: block;
   }
   
   .nav-list {
@@ -69,15 +69,14 @@ position: absolute;
     
     background-color: #f38181;
     margin-top: 8px;
+    position: absolute;
+    top: 15px;
 }
 .nav-link:hover {
     color: #f38181;
 }
 .site-nav {
-    max-width: 1110px;
-    display: flex;
-    margin: 0;
-   justify-content: space-between;
+    
 }
 
 .services {
@@ -149,7 +148,7 @@ font-weight: 400;
 }
 .team-introduction {
     width: 960px;
-height: 130px;
+
 font-size: 15px;
 line-height: 24px;
 color: #999999;
@@ -157,6 +156,7 @@ font-family: "Roboto";
 font-weight: 400;
 text-align: center;
 margin: 0 auto;
+margin-bottom: 40px;
 }
 
 .team-list {
@@ -187,7 +187,7 @@ margin: 0 auto;
     
     
     opacity: 0.9;
-    transition-duration: 200ms;
+    transition-duration: 10s;
    
     
     
@@ -259,6 +259,7 @@ font-weight: 700;
     width: 380px;
     height: 470px;
     margin-bottom: 30px;
+    transition-duration: 200ms;
     
 }
 
