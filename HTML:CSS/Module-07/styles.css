@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 16px;
 }
 
 .visually-hidden:not(:focus):not(:active), input[type="checkbox"].visually-hidden, input[type="radio"].visually-hidden {
@@ -105,13 +106,13 @@
 .site-logo {
     color: #fdd135;
     font-family: "wisdom";
-    font-size: 26px;
+    font-size: 1.625rem;
     text-decoration: none;
 }
 
 .section-header {
     font-family: "montserrat";
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 700;
     line-height: 75px;
 }
@@ -120,7 +121,7 @@
     font-family: "Droid";
     font-weight: 400;
     font-style: italic;
-    font-size: 16px;
+    font-size: 1rem;
     color: #adadad;
     margin-bottom: 75px;
 }
@@ -167,7 +168,7 @@
 .service-item-name {
     font-family: "montserrat";
     font-weight: 700;
-    font-size: 18px;
+    font-size: 1.125rem;
     color: #222222;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -176,7 +177,7 @@
 .service-item-text {
     font-family: "roboto";
     font-weight: 400;
-    font-size: 14px;
+    font-size: 0.875rem;
     color: #b7b7b7;
     margin-bottom: 115px;
 }
@@ -253,7 +254,7 @@
     border-radius: 3px;
     font-family: "montserrat";
     font-weight: 700;
-    font-size: 14px;
+    font-size: 0.875rem;
     color: #c9c9c9;
     padding-left: 20px;
 }
@@ -278,10 +279,25 @@ button {
     margin: 0 auto;
 
     border-radius: 4px;
-    font-size: 18px;
+    font-size: 1.125rem;
     color: #ffffff;
     font-family: "Montserrat";
     font-weight: 700;
 }
 
-
+.name:valid {
+    border: solid green 2px;
+}
+.name:focus:invalid {
+    border: solid red 2px;
+}
+.email:valid {
+    border: solid green 2px;
+}
+.email:focus:invalid {
+    border: solid red 2px;
+    
+}
+:focus {
+    outline: none;
+}
