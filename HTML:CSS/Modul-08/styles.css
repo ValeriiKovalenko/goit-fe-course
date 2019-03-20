@@ -56,6 +56,12 @@ text-align: center;
 
 
 }
+@media (min-width: 768px) {
+    .link {
+        order: 0;
+        
+    }
+}
 
 .link:focus {
     border: solid 0.125rem white;
@@ -76,6 +82,13 @@ font-family: "Montserrat";
 font-weight: 700;
 text-align: center;
 }
+@media (min-width: 768px) {
+    .site-logo {
+        
+
+    }
+}
+
 
 .site-header {
     display: flex;
@@ -91,6 +104,15 @@ text-align: center;
     left: 50%;
     transform: translateX(-50%);
 
+
+}
+@media (min-width: 768px) {
+    .site-header {
+        flex-direction: row-reverse;
+        width: 100%;
+        align-items: baseline;
+        justify-content: space-around;
+    }
 
 }
 .joinus {
@@ -148,6 +170,7 @@ text-align: center;
     font-weight: 700;
     text-align: center;
     margin-bottom: 15px;
+    
 
 
 }
@@ -166,6 +189,7 @@ font-family: "Montserrat";
 font-weight: 700;
 text-align: center;
 margin-bottom: 20px;
+padding: 0 10px;
 }
 .partner {
     display: flex;
@@ -203,6 +227,22 @@ margin-bottom: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+@media (min-width: 768px) {
+    .partner-list {
+        max-height: 550px;
+        
+        flex-wrap: wrap;
+        align-content: center;
+    }
+}
+@media (min-width: 1440px) {
+    .partner-list {
+        flex-direction: row;
+        max-width: 950px;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
 }
 .partner-item {
     display: flex;
