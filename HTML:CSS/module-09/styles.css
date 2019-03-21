@@ -39,7 +39,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
 }
-.link {
+.link  {
     text-decoration: none;
     
     color: white;
@@ -56,6 +56,7 @@ text-align: center;
 
 
 }
+
 /* @media (min-width: 768px) {
     .link {
         order: 0;
@@ -66,6 +67,11 @@ text-align: center;
 .link:focus {
     border: solid 0.125rem white;
     border-radius: 20px;
+    
+}
+.link:hover {
+    text-decoration: none;
+    color: white;
 }
 .link:nth-child(2) {
     margin-right: 0;
@@ -81,6 +87,10 @@ color: #ffffff;
 font-family: "Montserrat";
 font-weight: 700;
 text-align: center;
+}
+.site-logo:hover {
+    text-decoration: none;
+    color: white;
 }
 /* @media (min-width: 768px) {
     .site-logo {
