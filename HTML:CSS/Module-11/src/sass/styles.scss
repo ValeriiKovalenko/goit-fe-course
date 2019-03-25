@@ -1,0 +1,475 @@
+/*
+   Import partials below
+*/
+@import './normalize';
+
+@import './base/fonts.scss';
+
+@mixin social-icons-mixin($bs: cover, $pa: absolute, $br: 50%) {
+
+   background-size: $bs;
+   position: $pa;
+   border-radius: $br; 
+   
+   
+   
+      
+   }
+
+$main-color: #fce38a;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  width: 1200px;
+  align-items: center;
+  padding-bottom: 50px;
+
+}
+
+body {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.site__logo {
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 700;
+  font-family: "montserrat";
+  color: white;
+  display: block;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.header__icon {
+  fill: white;
+
+
+  &:hover {
+    fill: $main-color;
+  }
+}
+
+.nav__list {
+  list-style: none;
+  display: flex;
+
+  justify-content: space-between;
+
+
+}
+
+.nav__item {
+
+  padding-right: 5px;
+  display: flex;
+  align-items: center;
+
+}
+
+
+.nav__link {
+  text-decoration: none;
+
+  font-size: 14px;
+  color: white;
+  font-family: "Montserrat";
+  font-weight: 400;
+  position: relative;
+
+  &:hover {
+    color: $main-color;
+
+    &:hover::after {
+      content: "";
+      width: 100%;
+      height: 3px;
+      color: $main-color;
+
+      background-color: $main-color;
+      margin-top: 8px;
+      position: absolute;
+      top: 15px;
+      left: 0;
+    }
+
+  }
+}
+
+
+.site-nav {
+  width: 650px;
+}
+
+
+
+.welcome-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(to bottom, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%), url(../images/eagle.jpg);
+  background-size: cover;
+  margin-bottom: 45px;
+
+  &__header {
+    font-size: 150px;
+    text-align: center;
+    color: white;
+    font-family: "Montserrat";
+    font-weight: 700;
+    margin-bottom: 130px;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    font-size: 72px;
+    color: white;
+    font-family: "Kaushan Script";
+    font-weight: 400;
+    text-align: center;
+  }
+
+  &__button {
+    width: 160px;
+    height: 40px;
+    border: solid 2px white;
+    margin: 0 auto;
+    display: block;
+    background: transparent;
+    margin-bottom: 230px;
+    font-size: 14px;
+    color: #ffffff;
+    font-family: "Montserrat";
+    font-weight: 700;
+
+    &:hover {
+      background-color: #b6eae1;
+    }
+  }
+
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+  .welcome-section {
+    background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%), url(../images/female_sci_fi_cyborg-wallpaper-2560x1600-min.jpg);
+  }
+}
+
+
+.services-section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.services__list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: space-around;
+
+}
+
+.services__item {
+  width: 335px;
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 100px;
+
+
+
+}
+
+
+.services__title {
+
+  font-size: 14px;
+  color: #333333;
+  font-family: "Montserrat";
+  font-weight: 400;
+  margin-bottom: 20px;
+
+}
+
+.services__logo {
+  padding-right: 25px;
+}
+
+.services__text {
+  font-size: 15px;
+  line-height: 24px;
+  color: #999999;
+  font-family: "Roboto";
+  font-weight: 400;
+  max-width: 335px;
+}
+
+.section__title {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 60px;
+
+  &::after {
+    content: "";
+    width: 60px;
+    height: 3px;
+    color: #f38181;
+    text-align: center;
+    background-color: #f38181;
+
+    margin: 0 auto;
+    margin-top: 43px;
+
+  }
+
+}
+
+
+
+.italic {
+  font-size: 24px;
+  color: #333333;
+  font-family: "Kaushan Script";
+  font-weight: 400;
+
+}
+
+.team {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 85px;
+  border-bottom: 1px solid #e5e5e5;
+
+  &__introduction {
+    width: 960px;
+
+    font-size: 15px;
+    line-height: 24px;
+    color: #999999;
+    font-family: "Roboto";
+    font-weight: 400;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 40px;
+
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  &__name {
+    font-size: 14px;
+    color: #333333;
+    font-family: "Montserrat";
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+}
+
+
+
+
+
+
+.team__text {
+  font-size: 15px;
+  line-height: 24px;
+  color: #999999;
+  font-family: "Roboto";
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+}
+
+.team__photo {
+  box-shadow: 1px 1px 20px rgb(173, 172, 172);
+  opacity: 0.9;
+  transition-duration: 10s;
+}
+
+.team__item:hover .relative {
+
+  transform: translate(-20px, -20px);
+  box-shadow: 10px 10px #95e1d3;
+  transition-duration: 200ms;
+
+}
+
+
+.footer {
+  padding-bottom: 25px;
+  padding-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  &__text {
+    font-size: 14px;
+    color: #333333;
+    font-family: "Montserrat";
+    font-weight: 400;
+    text-align: center;
+    align-self: center;
+
+  }
+
+  &__button {
+    width: 150px;
+    height: 40px;
+
+    background-color: #95e1d3;
+    font-size: 14px;
+    color: #ffffff;
+    font-family: "Montserrat";
+    font-weight: 700;
+
+
+  }
+}
+
+.laaqiq {
+  color: #f38181;
+}
+
+input {
+  width: 230px;
+  height: 37px;
+  font-size: 15px;
+  line-height: 24px;
+  color: #cccccc;
+  font-family: "Roboto";
+  font-weight: 300;
+  font-style: italic;
+}
+
+.subscribe {
+  display: flex;
+}
+
+.relative {
+  position: relative;
+  width: 380px;
+  height: 470px;
+  margin-bottom: 30px;
+  transition-duration: 200ms;
+
+}
+
+.team__buttons {
+  width: 380px;
+  height: 470px;
+  display: flex;
+  background: linear-gradient(to bottom, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
+  top: 35%;
+  left: 15%;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+
+
+
+}
+
+.team__item:hover .team__buttons {
+  opacity: 1;
+
+}
+
+.snlink {
+  width: 55px;
+  height: 55px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $main-color;
+
+  &:hover {
+    background-color: #95e1d3;
+  }
+}
+
+
+
+.facebook {
+   @include social-icons-mixin;
+  background-image: url(../images/twitter-social-logotype.svg);
+  
+  top: 45%;
+  left: 20%;
+  
+
+}
+
+.twitter {
+   @include social-icons-mixin;
+   background-image: url(../images/facebook-logo-2.svg);
+  background-image: url(../images/instagram-social-network-logo-of-photo-camera.svg);
+
+  top: 45%;
+  left: 35%;
+  
+}
+
+.pinterest {
+@include social-icons-mixin;
+  background-image: url(../images/facebook-logo-2.svg);
+ 
+  top: 45%;
+  left: 50%;
+  
+}
+
+.instagram {
+   @include social-icons-mixin;
+   background-image: url(../images/facebook-logo-2.svg);
+  background-image: url(../images/pinterest-social-logo.svg);
+  
+  top: 45%;
+  left: 65%;
+
+}
+
+svg {
+  fill: #b6eae1;
+
+  height: 35px;
+  width: 85px;
+  
+}
+
+
+
