@@ -1,0 +1,93 @@
+
+
+
+
+
+
+
+
+body {
+    background: #2b5876;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4e4376, #2b5876);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4e4376, #2b5876); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+
+
+
+.gallery {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 20px;
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    height: 850px;
+    align-items: flex-start ;
+    
+}
+img {
+    width: 100%;
+    
+    opacity: 0;
+    transition: opacity 1s;
+    position: absolute;
+    left: 0;
+    border-radius: 10%;
+    box-shadow: 0px 0px 10px #000;
+    
+}
+
+.showed {
+    
+    animation: zoomOutDown 1s linear;
+    opacity: 1;
+    
+    
+   
+}
+.images {
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+    
+    
+
+}
+
+button {
+    
+    border: none;
+    
+background: -webkit-linear-gradient(to right, #bfe9ff, #ff6e7f);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #bfe9ff, #ff6e7f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    color: rgb(241, 243, 243);
+    
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 5% 2% ;
+    box-shadow: 0px 0px 10px #000;
+    outline: none;
+    font-size: 30px;
+    vertical-align: top;
+    text-align: center;
+    transition-duration: 2s;
+   
+    
+   
+    
+    
+}
+button:hover {
+    color: black;
+    /* transform: rotate(360deg); */
+    transition-duration: 2s;
+    width: 80px;
+    height: 80px;
+    
+    border-radius: 50%;
+    opacity: .7;
+
+}
